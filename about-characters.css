@@ -1,0 +1,102 @@
+* about-characters.css */
+
+.about-main-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+}
+
+.about-main-content h1 {
+    font-size: 3.5em;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.about-main-content .intro-text {
+    font-size: 1.2em;
+    color: #ccc;
+    max-width: 700px;
+     margin: 0 auto 40px auto;
+}
+
+.character-bio-list {
+    display: grid;
+    gap: 30px; 
+    padding: 20px;
+}
+
+.character-summary-card {
+    display: flex;
+    align-items: flex-start; 
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: left; /
+}
+
+.summary-img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover;
+     border-radius: 8px;
+    margin-right: 25px;
+    border: 2px solid red;
+    flex-shrink: 0; 
+}
+
+.summary-details h2 {
+    font-size: 2em;
+    color: red;
+    margin-top: 0; 
+    margin-bottom: 5px;
+}
+
+.summary-details .real-name {
+    font-size: 1.1em;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.summary-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .character-summary-card {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .summary-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .summary-details {
+        width: 100%; 
+    }
+}
